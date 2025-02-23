@@ -35,16 +35,8 @@ public class PuzzleSolver {
             for (int y = 0; y < board.getRow(); y++) {
                 for (int x = 0; x < board.getCol(); x++) {
                     turn++;
-                    // if (turn % 10000000 == 0){
-                    //     System.out.println(turn);
-                    //     board.printBoard();
-                    // }
                     
                     if (!board.canPlacePiece(variation, x, y)) continue;
-    
-                    // System.out.println("Turn: " + turn++);
-                    // System.out.println("Placing piece: " + piece.getId());
-                    // board.printBoard();
     
                     board.placePiece(variation, x, y);
                     if (solvePuzzle(piecePlaced + 1)) {

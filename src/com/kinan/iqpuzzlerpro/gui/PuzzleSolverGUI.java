@@ -60,7 +60,7 @@ public class PuzzleSolverGUI {
 
             if (file.getName().endsWith(".txt")) {
                 selectedFile = file;
-                selectFileButton.setText("File Selected: " + file.getName()); // Update button text
+                selectFileButton.setText("File Selected: " + file.getName());
                 System.out.println("Selected file: " + selectedFile.getAbsolutePath());
 
                 showLoadingScreen();

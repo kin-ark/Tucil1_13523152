@@ -67,29 +67,6 @@ public class PuzzlePiece {
     
         return new PuzzlePiece(newShape, size, id, color);
     }
-
-    // public void getAllVariations() {
-    //     variations = new PuzzlePiece[8];
-    //     PuzzlePiece current = this;
-    
-    //     for (int i = 0; i < 4; i++) {
-    //         variations[i] = current.normalize();
-    //         variations[i + 4] = current.flipH().normalize();
-    //         current = current.rotate();
-    //     }
-    // }
-
-    // For Debugging  Purpose
-    // public void printVariations() {
-    //     if (variations == null) {
-    //         getAllVariations();
-    //     }
-    
-    //     System.out.println("Variations of piece " + id + ":");
-    //     for (int v = 0; v < variations.length; v++) {
-    //         System.out.println("Variation " + (v + 1) + ": " + java.util.Arrays.deepToString(variations[v].getShape()));
-    //     }
-    // }
     
     public void getAllUniqueVariations() {
         PuzzlePiece[] allVariations = new PuzzlePiece[8];
