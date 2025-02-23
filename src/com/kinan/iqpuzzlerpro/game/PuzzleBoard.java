@@ -17,7 +17,7 @@ public class PuzzleBoard {
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                board[i][j] = 'X';
+                board[i][j] = '#';
             }
         }
     }
@@ -30,6 +30,14 @@ public class PuzzleBoard {
 
         for (int i = 0; i < row; i++) {
             System.arraycopy(customBoard[i], 0, board[i], 0, col);
+        }
+        
+        for (int i = 0; i < row; i++){
+            for (int j = 0; j < col; j++){
+                if (board[i][j] == 'X'){
+                    board[i][j] = '#';
+                }
+            }
         }
     }
 
@@ -46,7 +54,7 @@ public class PuzzleBoard {
     }
 
     public boolean isEmpty(int x, int y) {
-        return board[y][x] == 'X';
+        return board[y][x] == '#';
     }
 
     public boolean canPlacePiece(PuzzlePiece piece, int x, int y) {
@@ -56,7 +64,7 @@ public class PuzzleBoard {
             int newX = x + coord[0];
             int newY = y + coord[1];
 
-            if (newX < 0 || newY < 0 || newX >= col || newY >= row || board[newY][newX] != 'X' || board[newY][newX] == '.') {
+            if (newX < 0 || newY < 0 || newX >= col || newY >= row || board[newY][newX] != '#' || board[newY][newX] == '.') {
                 return false;
             }
         }
@@ -84,7 +92,7 @@ public class PuzzleBoard {
             int newY = y + coord[1];
 
             if (newX >= 0 && newY >= 0 && newX < col && newY < row) {
-                board[newY][newX] = 'X';
+                board[newY][newX] = '#';
             }
         }
 
@@ -94,7 +102,7 @@ public class PuzzleBoard {
     public boolean isSolved() {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                if (board[i][j] == 'X') {
+                if (board[i][j] == '#') {
                     return false;
                 }
             }
@@ -105,8 +113,8 @@ public class PuzzleBoard {
     public void printBoard() {
         for (char[] row : board) {
             for (char cell : row) {
-                if (cell == 'X') {
-                    System.out.print(RESET + "X  ");
+                if (cell == '#') {
+                    System.out.print(RESET + "#  ");
                 } else if (cell == '.') {
                     System.out.print("   " + RESET);
                 } else {
