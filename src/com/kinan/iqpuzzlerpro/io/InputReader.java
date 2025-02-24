@@ -75,6 +75,11 @@ public class InputReader {
                         throw new Error("Too many puzzle pieces: Expected " + P + ", but more were found.");
                     }
                     currentId = firstChar;
+                    for(int i = 0; i < ids.length; i++){
+                        if (currentId == ids[i]){
+                            throw new Error("Duplicate pieces found.");
+                        }
+                    }
                     ids[index] = currentId;
                 }
                 currentPiece.add(line);
