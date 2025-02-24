@@ -165,7 +165,7 @@ public class PuzzleSolverGUI {
                     showErrorDialog("Input Error: " + e.getMessage());
                     return null; 
                 } catch (Exception e) { 
-                    showErrorDialog("Unexpected Error: " + e.getMessage());
+                    showErrorDialog("Unexpected Error!");
                     return null; 
                 }
                 return null;
