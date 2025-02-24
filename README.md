@@ -29,7 +29,7 @@ IQ Puzzler Pro Solver adalah aplikasi yang dapat menyelesaikan puzzle IQ Puzzler
    ```sh
    https://github.com/kin-ark/Tucil1_13523152.git
    ```
-2. Jika tidak ada JAR files, build aplikasinya dengan perintah ini atau double click build.bat
+2. Jika tidak ada JAR files, build aplikasinya double click build.bat
    ```sh
    build.bat
    ```
