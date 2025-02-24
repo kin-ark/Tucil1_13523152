@@ -1,0 +1,7 @@
+...A...
+.BBAAA.
+BBBCCCC
+.EEECD.
+...E...
+Times taken: 3 ms
+Turns taken: 24370 turns

@@ -1,0 +1,5 @@
+ZZLFI
+ZLLFF
+ZLAAB
+Times taken: 2 ms
+Turns taken: 1270 turns

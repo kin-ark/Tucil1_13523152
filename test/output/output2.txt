@@ -1,0 +1,15 @@
+AB
+CD
+EF
+GH
+IJ
+KL
+MN
+OP
+QR
+ST
+UV
+WX
+YZ
+Times taken: 7 ms
+Turns taken: 351 turns

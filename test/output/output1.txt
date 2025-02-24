@@ -1,0 +1,7 @@
+AGGGD
+AABDD
+CCBBE
+CFFEE
+FFFEE
+Times taken: 93 ms
+Turns taken: 5194981 turns
